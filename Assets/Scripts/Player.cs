@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _rBody2D;
     [SerializeField] private Animator _animator;
-    //[SerializeField] private PlayableDirector _director;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Jump") && GroundSensor._isGrounded); 
+        if(Input.GetButtonDown("Jump") && GroundSensor._isGrounded)
         {
             Jump();
         }
