@@ -6,14 +6,14 @@ public class GroundSensor : MonoBehaviour
 {
     public static bool _isGrounded;
 
-    private Animator _animator;
+    //private Animator _animator;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == 3)
         {
             _isGrounded = true;
-            _animator.SetBool("isJumping", false);
+            //_animator.SetBool("isJumping", false);
         }
     }
 
@@ -22,7 +22,7 @@ public class GroundSensor : MonoBehaviour
         if(other.gameObject.layer == 3)
         {
             _isGrounded = false;
-            _animator.SetBool("isJumping", false);
+            //_animator.SetBool("isJumping", false);
         }
     }
 
@@ -31,7 +31,7 @@ public class GroundSensor : MonoBehaviour
         if(other.gameObject.layer == 3)
         {
             _isGrounded = true;
-            _animator.SetBool("isJumping", true);
+            //_animator.SetBool("isJumping", true);
         }
     }
 }
